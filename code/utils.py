@@ -33,6 +33,7 @@ class UtilityClass:
             openai.api_key = self.openai_api_key
             os.environ['COHERE_API_KEY'] = self.cohere_api_key
 
+
     def load_pdf_docs(self, pdf_dir_path: str, pdf_path: str = None):
         # load pdf from dir
         logger.info("Loading pdf docs from dir")
